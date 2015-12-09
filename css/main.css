@@ -239,6 +239,8 @@ margin:10px;
 /*---footer containts area----*/
 .footer_widget {
 width:calc(100% / 3 - 20px);
+width:-moz-calc(100% / 3 - 20px);
+width:-webkit-calc(100% / 3 - 20px);
 min-height:400px;
 background-color:#fff;
 float:left;
