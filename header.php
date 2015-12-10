@@ -28,6 +28,16 @@
 
 		</div>
 	</header>
+	<?php wp_nav_menu(array(
+		'theme_location'=>'mainnav',
+		'container'=>'nav',
+		'container_class'=>'main_nav clearfix'
+	
+	
+	)); ?>
+	
+	
+	<!--
 	<nav class="main_nav clearfix">
 		<ul>
 		<li><a href="">menu</a></li>
@@ -38,3 +48,5 @@
 		<li><a href="">menu</a></li>
 		</ul>
 	</nav>
+	-->
+	
