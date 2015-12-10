@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,300);
 body {
     font-family: "MS PGothic","Osaka",Arial,sans-serif;
-    font-size: 75%;
+    font-size: 80%;
 }
 
 /* -------Common class-----*/
@@ -31,6 +31,14 @@ clear:both;
 /*存在させるけど非表示*/
 .invisible {
 visibility: hidden;
+}
+
+.align-right {
+text-align:right;
+}
+
+.align-left {
+text-align:left;
 }
 
 
@@ -294,3 +302,29 @@ margin:0 0 10px 10px;
 .single_link {
 color:#000;
 }
+
+/*--------category archive fix-------------*/
+.category .logo,.page .logo {
+transform:none;
+top:0;
+left:0;
+
+}
+
+.category .main_nav ul li:first-child a,
+.page-id-40 .main_nav ul li:first-child a,
+.page-id-43 .main_nav ul li:first-child a
+ {
+border-bottom-left-radius:0;
+}
+
+.category .main_nav ul li:last-child a,
+.page-id-40 .main_nav ul li:last-child a,
+.page-id-43 .main_nav ul li:last-child a
+ {
+border-bottom-right-radius:0;
+} 
+
+
+
+
