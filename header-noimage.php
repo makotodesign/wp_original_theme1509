@@ -9,18 +9,17 @@
 <body <?php body_class();?>>
 <div class="container">
 	<header>
-		<a href="">
+		<a href="<?php echo home_url( ); ?>">
 			<h1 class="logo">
 				Makotodesign
 			</h1>
 		</a>
-		<nav class="utility_nav">
-			<ul>
-			<li><a href="">NEWS</a></li>
-			<li><a href="">SITEMAP</a></li>
-			<li><a href="">PRIVACY</a></li>
-			</ul>
-		</nav>
+		<?php wp_nav_menu(array(
+				'theme_location'=>'utilitynavi',
+				'container'=>'nav',
+				'container_class'=>'utility_nav'	
+					)); ?>
+		
 
 	</header>
 	<?php wp_nav_menu(array(
