@@ -14,7 +14,7 @@
 
 			</section>
 
-			<?php get_sidebar(); ?>
+			<?php get_sidebar('top'); ?>
 
 		</div>
 		<section class="content_fullwidth clearfix">

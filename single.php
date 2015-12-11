@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('noimage'); ?>
 	<main>
 		<div class="gloval_main clearfix">
 			<section class="contents">
@@ -20,7 +20,21 @@
 
 			</section>
 
-			<?php get_sidebar(); ?>
+			<?php
+				if(in_category('web')){
+					get_sidebar('web');
+				}
+				if(in_category('dtp')){
+					get_sidebar('dtp');
+				}
+				if(in_category('blog')){
+					get_sidebar('blog');
+				}				
+				else{
+					get_sidebar('single');
+				}
+	 
+			 ?>
 
 		</div>
 
