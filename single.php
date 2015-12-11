@@ -30,9 +30,7 @@
 				if(in_category('blog')){
 					get_sidebar('blog');
 				}				
-				else{
-					get_sidebar('single');
-				}
+		
 	 
 			 ?>
 
