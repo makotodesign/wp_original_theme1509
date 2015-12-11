@@ -19,11 +19,33 @@
 		</div>
 		<section class="content_fullwidth clearfix">
 			<h2 class="contnt_title">新着記事</h2>
-			<ul>				
+			<ul>
+			<?php 
+			$args=array(
+			'posts_per_page'=>4 			
+			//'category_name'=>'web'カテゴリーで絞り込みたかったら
+			);	
+			$posts=get_posts($args);			
+			foreach($posts as $post):
+				setup_postdata($post);?>
+				<li class="post_prev">
+					<a href="<?php the_permalink(); ?>"><h3 class="new_post_title"><?php the_title();?></h3></a>
+					<?php 
+if ( has_post_thumbnail() ) { // 投稿にアイキャッチ画像が割り当てられているかチェックします。
+	the_post_thumbnail('thumbnail');
+} 
+?>
+					<div class="new_post_content"><?php the_excerpt();?></div>				
+				</li>	
+		
+			<?php endforeach;?>
+			
+			<!--			
 			<li class="post_prev"></li>
 			<li class="post_prev"></li>
 			<li class="post_prev"></li>
 			<li class="post_prev"></li>
+			-->
 			</ul>
 		</section>
 		<section class="content_fullwidth">
