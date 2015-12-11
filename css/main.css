@@ -245,8 +245,8 @@ float:left;
 width:calc(100% - 20px);
 width:-moz-calc(100% - 20px);
 width:-webkit-calc(100% - 20px);
-min-height:250px;
-background-image:url(../img/cloth.png);
+min-height:50px;
+/*background-image:url(../img/cloth.png);*/
 margin:10px;
 
 }

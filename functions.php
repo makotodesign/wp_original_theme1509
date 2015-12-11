@@ -4,9 +4,9 @@ register_nav_menus(array(
 	'utilitynavi'=>'これは上部のナビゲーションです'
 )); 
 
-
+/*くりかえし書くのがめんどくさいので↓
 register_sidebar(array(
-	'name'=>'toppage',
+	'name'=>'toppageのサイドバー',
 	'id'=>'toppage',
 	'before_widget'=>'<div class="widget">',
 	'after_widget'=>'</div>',
@@ -14,6 +14,34 @@ register_sidebar(array(
 	'after_title'=>'</h3>'
 ));
 
+register_sidebar(array(
+	'name'=>'webのサイドバー',
+	'id'=>'web',
+	'before_widget'=>'<div class="widget">',
+	'after_widget'=>'</div>',
+	'before_title'=>'<h3>',
+	'after_title'=>'</h3>'
+));
+*/
+
+wedgetadd('toppageのサイドバー','top');
+wedgetadd('webのサイドバー','web');
+wedgetadd('dtpのサイドバー','dtp');
+wedgetadd('blogのサイドバー','blog');
+wedgetadd('accessのサイドバー','access');
+wedgetadd('contactのサイドバー','contact');
+
+function wedgetadd($n,$id){
+	register_sidebar(array(
+	'name'=>$n,
+	'id'=>$id,
+	'before_widget'=>'<div class="widget">',
+	'after_widget'=>'</div>',
+	'before_title'=>'<h3>',
+	'after_title'=>'</h3>'
+));
+
+}
 
 
 

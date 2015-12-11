@@ -1,5 +1,5 @@
 <aside class="sidemenu">
 				
-<?php dynamic_sidebar('toppage'); ?>				
+<?php dynamic_sidebar('top'); ?>				
 				
 </aside>
