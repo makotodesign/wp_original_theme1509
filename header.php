@@ -19,21 +19,14 @@
 				'container'=>'nav',
 				'container_class'=>'utility_nav'	
 					)); ?>
-		
-		<!--
-		<nav class="utility_nav">
-			<ul>
-			<li><a href="">NEWS</a></li>
-			<li><a href="">SITEMAP</a></li>
-			<li><a href="">PRIVACY</a></li>
-			</ul>
-		</nav>
-		-->
-		<div class="main_header clear">
-			<h2>
-				<?php bloginfo('description'); ?>
-			</h2>
 
+		<div class="main_header clear">
+			<!--<h2>
+				<?php bloginfo('description'); ?>
+			</h2>-->
+<?php 
+    echo do_shortcode("[metaslider id=91]"); 
+?>
 		</div>
 	</header>
 	<?php wp_nav_menu(array(
