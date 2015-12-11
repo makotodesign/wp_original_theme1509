@@ -54,7 +54,14 @@ register_sidebar(array(
 
 add_theme_support( 'post-thumbnails' ); 
 
+/*
 function my_scripts() {
 wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ) );
+}
+add_action( 'wp_enqueue_scripts', 'my_scripts' );
+*/
+
+function my_scripts() {
+wp_enqueue_script(array('jquery'));//外部ライブラリjqueryだけほしい場合
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
