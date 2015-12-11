@@ -30,7 +30,6 @@ wedgetadd('dtpのサイドバー','dtp');
 wedgetadd('blogのサイドバー','blog');
 wedgetadd('accessのサイドバー','access');
 wedgetadd('contactのサイドバー','contact');
-
 function wedgetadd($n,$id){
 	register_sidebar(array(
 	'name'=>$n,
@@ -42,6 +41,16 @@ function wedgetadd($n,$id){
 ));
 
 }
+
+//footerエリアのウィジェット
+register_sidebar(array(
+	'name'=>'footerのコンテンツ',
+	'id'=>'footer',
+	'before_widget'=>'<div class="footer_widget">',
+	'after_widget'=>'</div>',
+	'before_title'=>'<h3>',
+	'after_title'=>'</h3>'
+));
 
 
 

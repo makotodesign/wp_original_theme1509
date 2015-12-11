@@ -46,7 +46,9 @@ text-align:right;
 text-align:left;
 }
 
-
+.align-center {
+text-align:center;
+}
 
 /* ↑-------Common class-----　*/
 
@@ -78,9 +80,9 @@ border-top-right-radius:20px;
 }
 
 footer {
-border:8px solid rgba(255,255,255,0.8);
 margin-bottom: 50px;
 position:relative;
+background-image:url(../img/cloth.png);
 }
 
 
@@ -255,12 +257,19 @@ margin:10px;
 width:calc(100% / 3 - 20px);
 width:-moz-calc(100% / 3 - 20px);
 width:-webkit-calc(100% / 3 - 20px);
-min-height:400px;
-background-color:#fff;
+min-height:200px;
 float:left;
-margin:10px;
+margin:20px 10px;
 }
 
+.footer_widget:nth-child(-n+2){
+border-right:2px dotted #000;
+
+}
+
+.footer_widget:nth-child(-n+3) {
+padding:20px;
+}
 /*--words_assets--*/
 
 .content_title {
@@ -318,7 +327,7 @@ color:#000;
 }
 
 /*--------category archive fix-------------*/
-.category .logo,.page .logo {
+.category .logo,.page .logo,.single .logo {
 transform:none;
 top:0;
 left:0;
@@ -339,6 +348,8 @@ border-bottom-left-radius:0;
 border-bottom-right-radius:0;
 } 
 
+/*--------single fix-------------*/
 
-
-
+.single .gloval_main .contents .content_sentence {
+min-height:800px;
+}
